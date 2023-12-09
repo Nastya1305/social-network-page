@@ -1,0 +1,39 @@
+@import "./normalize";
+@import "./vars";
+
+.container {
+   max-width: $contentWidth + px;
+   margin: 0 auto;
+   position: relative;
+   width: 100%;
+
+   @media (max-width: $media1 + px) {
+      max-width: none;
+      padding: 0 40px;
+   }
+
+   @media (max-width: $media2 + px) {
+      max-width: 970px;
+   }
+
+   @media (max-width: $media3 + px) {
+      max-width: 750px;
+   }
+
+   @media (max-width: $media4 + px) {
+      max-width: none;
+      padding: 0 15px;
+   }
+}
+
+html,
+body {
+   height: 100%;
+   font-size: 14px;
+   font-family: Avenir, Helvetica, Arial, sans-serif;
+   background: linear-gradient(90deg, #b9deed, #efefef);
+
+   @media (max-width: $media3 + px) {
+      font-size: 12px;
+   }
+}

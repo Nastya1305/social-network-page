@@ -1,0 +1,57 @@
+@import "@/styles/vars";
+
+.user-card {
+   background-color: $transparent-white;
+   color: $gray;
+
+   max-width: 550px;
+   padding: 22px;
+   border-radius: 30px;
+
+   @media (max-width: $media4 + px) {
+      padding: 15px;
+   }
+
+   display: flex;
+   justify-content: space-between;
+   flex: 1 1 100%;
+
+   &__name {
+      padding-right: 30px;
+
+      @media (max-width: $media4 + px) {
+         padding-right: 15px;
+      }
+   }
+
+   &__fullname {
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: $teal;
+      margin-bottom: 6px;
+
+      @media (max-width: $media4 + px) {
+         font-size: 1.2rem;
+      }
+   }
+
+   &__link {
+      color: $teal;
+      text-decoration: underline;
+   }
+}
+
+.info-list {
+   flex: 1 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+
+   &__item {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 0.7em;
+   }
+}
