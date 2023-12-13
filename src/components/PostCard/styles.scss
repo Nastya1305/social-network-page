@@ -1,0 +1,19 @@
+@import "@/styles/vars";
+
+.post {
+   padding: 12px;
+   border-radius: 5px;
+   background-color: $transparent-white;
+
+   &__title {
+      color: $teal;
+      font-size: 1.2rem;
+      line-height: 1.3;
+      margin-bottom: 5px;
+   }
+
+   &__body {
+      color: $gray;
+      text-align: justify;
+   }
+}

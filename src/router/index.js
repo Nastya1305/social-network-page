@@ -1,25 +1,41 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import UsersView from '../views/UsersView.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import UsersView from '@/views/UsersView.vue';
+import UserInfoView from '@/views/UserInfoView.vue';
+import PostList from '@/components/PostList';
+import PhotoAlbumList from '@/components/PhotoAlbumList';
 
 const routes = [
   {
     path: '/',
-    name: 'users',
     component: UsersView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/users/:id',
+    component: UserInfoView,
+    children: [
+      {
+        path: '',
+        components:
+          {
+            posts: PostList,
+            albums: PhotoAlbumList
+          },
+      },
+      {
+        path: 'posts',
+        components: { posts: PostList },
+      },
+      {
+        path: 'albums',
+        components: { albums: PhotoAlbumList },
+      },
+    ],
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
-})
+});
 
-export default router
+export default router;

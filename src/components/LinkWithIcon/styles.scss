@@ -1,0 +1,19 @@
+@import "@/styles/vars";
+
+.link {
+   display: inline-flex;
+   align-items: center;
+   gap: 10px;
+
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: $transparent-teal;
+
+   &:hover {
+      color: $teal;
+
+      svg {
+         fill: $teal;
+      }
+   }
+}

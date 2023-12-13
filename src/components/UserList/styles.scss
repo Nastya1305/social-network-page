@@ -1,0 +1,30 @@
+@import "@/styles/vars";
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -10px;
+
+   &__item {
+      padding: 10px;
+      flex: 0 1 50%;
+
+      @media (max-width: $media2 + px) {
+         flex: 1 0 100%;
+      }
+   }
+
+   &__card {
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+         background-color: white;
+      }
+   }
+}
+
+.loader {
+   left: 50%;
+   margin-top: 100px;
+}

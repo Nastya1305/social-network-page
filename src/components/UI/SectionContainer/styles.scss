@@ -1,0 +1,23 @@
+@import "@/styles/vars";
+
+.section {
+   min-height: 150px;
+   padding: 22px;
+   border-radius: 30px;
+   background-color: $transparent-white;
+
+   @media (max-width: $media4 + px) {
+      padding: 15px;
+   }
+
+   &__title {
+      color: $teal;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+   }
+
+   &__loader {
+      margin-top: 10px;
+      left: 50%;
+   }
+}

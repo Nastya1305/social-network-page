@@ -1,20 +1,11 @@
 @import "@/styles/vars";
 
 .user-card {
-   background-color: $transparent-white;
-   color: $gray;
-
-   max-width: 550px;
-   padding: 22px;
-   border-radius: 30px;
-
-   @media (max-width: $media4 + px) {
-      padding: 15px;
-   }
-
    display: flex;
    justify-content: space-between;
    flex: 1 1 100%;
+
+   color: $gray;
 
    &__name {
       padding-right: 30px;
@@ -43,10 +34,11 @@
 }
 
 .info-list {
-   flex: 1 0 auto;
    display: flex;
    flex-direction: column;
    gap: 5px;
+
+   flex: 1 0 auto;
 
    &__item {
       display: flex;

@@ -1,31 +1,8 @@
 
 <template>
-	<svg xmlns="http://www.w3.org/2000/svg" :width="width" :height="height" viewBox="0 0 485.211 485.211" >
-		<g :fill="iconColor">
-			<path d="M318.75,229.5v-153L242.25,0l-76.5,76.5v51h-153v357h459v-255H318.75z M114.75,433.5h-51v-51h51V433.5z M114.75,331.5h-51
-			v-51h51V331.5z M114.75,229.5h-51v-51h51V229.5z M267.75,433.5h-51v-51h51V433.5z M267.75,331.5h-51v-51h51V331.5z M267.75,229.5
-			h-51v-51h51V229.5z M267.75,127.5h-51v-51h51V127.5z M420.75,433.5h-51v-51h51V433.5z M420.75,331.5h-51v-51h51V331.5z"/>
-		</g>
-	</svg>
+   <path
+      d="M 12 8.526 L 12 2.842 L 9 0 L 6 2.842 L 6 4.737 L 0 4.737 L 0 18 L 18 18 L 18 8.526 L 12 8.526 Z M 4 16.105 L 2 16.105 L 2 14.211 L 4 14.211 L 4 16.105 Z M 4 12.316 L 2 12.316 L 2 10.421 L 4 10.421 L 4 12.316 Z M 4 8.526 L 2 8.526 L 2 6.632 L 4 6.632 L 4 8.526 Z M 10 16.105 L 8 16.105 L 8 14.211 L 10 14.211 L 10 16.105 Z M 10 12.316 L 8 12.316 L 8 10.421 L 10 10.421 L 10 12.316 Z M 10 8.526 L 8 8.526 L 8 6.632 L 10 6.632 L 10 8.526 Z M 10 4.737 L 8 4.737 L 8 2.842 L 10 2.842 L 10 4.737 Z M 16 16.105 L 14 16.105 L 14 14.211 L 16 14.211 L 16 16.105 Z M 16 12.316 L 14 12.316 L 14 10.421 L 16 10.421 L 16 12.316 Z" />
 </template>
 
 
-<script>
-export default {
-   props: {
-      width: {
-         type: [Number, String],
-         default: 18
-      },
-      height: {
-         type: [Number, String],
-         default: 18
-      },
-      iconColor: {
-         type: String,
-         default: 'currentColor'
-      }
-   }
-}
-</script>
 

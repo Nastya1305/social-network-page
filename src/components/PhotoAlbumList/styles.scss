@@ -1,0 +1,28 @@
+@import "@/styles/vars";
+
+.album-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -1rem;
+
+   &__item {
+      display: flex;
+      min-width: 0;
+      padding: 1rem;
+
+      flex: 0 1 33.333%;
+
+      @media (max-width: $media2 + px) {
+         flex: 0 1 50%;
+      }
+
+      @media (max-width: 630px) {
+         flex: 0 1 100%;
+         padding: 0.6rem;
+      }
+   }
+
+   &__album {
+      min-width: 0;
+   }
+}

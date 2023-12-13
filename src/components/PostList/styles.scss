@@ -1,0 +1,19 @@
+@import "@/styles/vars";
+
+.post-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -1rem;
+
+   &__item {
+      display: flex;
+      padding: 1rem;
+
+      flex: 0 1 50%;
+
+      @media (max-width: $media3 + px) {
+         flex: 1 0 100%;
+         padding: 0.8rem;
+      }
+   }
+}
