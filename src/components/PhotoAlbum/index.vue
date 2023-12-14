@@ -42,7 +42,7 @@ export default {
          required: true
       }
    },
-   setup() {
+   data() {
       return {
          modules: [Pagination],
       };
