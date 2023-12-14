@@ -1,4 +1,4 @@
-# [users](https://nastya1305.github.io/users/)
+# [social-network-page](https://nastya1305.github.io/social-network-page/)
 Test task made with [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
 
 ### Technology stack:
