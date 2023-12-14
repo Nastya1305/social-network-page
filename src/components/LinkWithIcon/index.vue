@@ -1,6 +1,6 @@
 <template>
    <router-link :to="path" class="link">
-      <icon-base width="2rem" height="2rem" :iconColor="transparentTealColor" :hoverColor="tealColor">
+      <icon-base width="2rem" height="2rem" :iconColor="tealColor" :hoverColor="lightTealColor">
          <slot></slot>
       </icon-base>
       {{ text }}
@@ -10,7 +10,7 @@
 
 <script>
 import IconBase from '@/components/UI/IconBase.vue';
-import { teal, transparentTeal } from '@/constants/colors';
+import { teal, lightTeal } from '@/constants/colors';
 
 export default {
    name: 'LinkWithIcon',
@@ -29,7 +29,7 @@ export default {
    },
    created() {
       this.tealColor = teal;
-      this.transparentTealColor = transparentTeal;
+      this.lightTealColor = lightTeal;
    }
 }
 </script>

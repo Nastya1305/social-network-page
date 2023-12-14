@@ -1,7 +1,9 @@
 <template>
    <section class="section">
       <h2 v-if="title" class="section__title">{{ title }}</h2>
-      <fade-loader class="section__loader" :loading="isLoading" :color="tealColor" />
+      <div class="section__loader">
+         <fade-loader :loading="isLoading" :color="tealColor" />
+      </div>
       <slot v-if="!isLoading"></slot>
    </section>
 </template>

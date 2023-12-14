@@ -41,6 +41,11 @@ body {
 .wrapper {
    padding-top: 50px;
    padding-bottom: 50px;
+
+   @media (max-width: $media4 + px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
 }
 
 .error {
@@ -52,5 +57,3 @@ body {
    font-weight: 600;
    color: $red;
 }
-
-

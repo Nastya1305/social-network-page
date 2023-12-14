@@ -7,13 +7,12 @@
 
    font-size: 1.3rem;
    font-weight: 600;
-   color: $transparent-teal;
+   color: $teal;
 
    &:hover {
-      color: $teal;
-
+      color: $light-teal;
       svg {
-         fill: $teal;
+         fill: $light-teal;
       }
    }
 }

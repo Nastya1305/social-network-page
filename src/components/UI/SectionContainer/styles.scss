@@ -1,7 +1,8 @@
 @import "@/styles/vars";
 
 .section {
-   min-height: 150px;
+   position: relative;
+   min-height: 130px;
    padding: 22px;
    border-radius: 30px;
    background-color: $transparent-white;
@@ -17,7 +18,8 @@
    }
 
    &__loader {
-      margin-top: 10px;
+      position: absolute;
       left: 50%;
+      top: 50%;
    }
 }
