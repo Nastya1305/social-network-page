@@ -16,10 +16,10 @@ const routes = [
       {
         path: '',
         components:
-          {
-            posts: PostList,
-            albums: PhotoAlbumList
-          },
+        {
+          posts: PostList,
+          albums: PhotoAlbumList
+        },
       },
       {
         path: 'posts',
@@ -35,7 +35,10 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  },
 });
 
 export default router;
