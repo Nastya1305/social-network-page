@@ -1,11 +1,12 @@
 @import "@/styles/vars";
 
 .input {
-   background: $transparent-teal;
+   width: 100%;
    border: 0;
    padding: 5px 9px;
+
    border-radius: 8px;
-   width: 100%;
+   background: $transparent-teal;
 
    color: $teal;
    font-size: 1rem;
@@ -19,6 +20,7 @@
 .label {
    display: block;
    margin-bottom: 0.5rem;
+   
    font-size: 1rem;
    font-weight: 600;
    color: $teal;
