@@ -8,3 +8,13 @@ export async function getPosts(userId) {
    return response.data;
 }
 
+export async function createPost(post, userId) {
+   const response = await api.post(POSTS,
+      {
+         title: post.title,
+         body: post.body,
+         userId,
+      }
+   );
+   return response.data;
+}

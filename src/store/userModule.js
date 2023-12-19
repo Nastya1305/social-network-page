@@ -22,7 +22,7 @@ export const userModule = {
       }
    },
    actions: {
-      async fetchUsers({ state, commit }) {
+      async fetchUsers({ commit }) {
          try {
             commit('setLoading', true);
             commit('setErrorMessage', "");
@@ -34,7 +34,7 @@ export const userModule = {
          }
       },
 
-      async fetchCurUser({ state, commit }, userId) {
+      async fetchCurUser({ commit }, userId) {
          try {
             commit('setCurUser', undefined);
             commit('setLoading', true);

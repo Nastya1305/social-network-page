@@ -6,11 +6,16 @@ body {
    height: 100%;
    font-size: 14px;
    font-family: Avenir, Helvetica, Arial, sans-serif;
-   background: linear-gradient(90deg, #b9deed, #efefef);
+   background: $teal-gradient;
 
    @media (max-width: $media3 + px) {
       font-size: 12px;
    }
+}
+
+body.modal-open {
+   overflow: hidden;
+   height: 100vh;
 }
 
 .container {

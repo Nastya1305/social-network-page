@@ -1,0 +1,30 @@
+@import "@/styles/vars";
+
+.text-box {
+   width: 100%;
+   min-height: 100px;
+   padding: 5px 9px;
+   border: 0;
+
+   background: $transparent-teal;
+   border-radius: 8px;
+   
+   color: $teal;
+   font-size: 1rem;
+   font-weight: 600;
+
+   resize: none;
+
+   &:focus {
+      outline: 2px solid $teal;
+   }
+}
+
+.label {
+   display: block;
+   margin-bottom: 0.5rem;
+   
+   font-size: 1rem;
+   font-weight: 600;
+   color: $teal;
+}

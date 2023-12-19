@@ -1,6 +1,6 @@
 <template>
    <svg xmlns="http://www.w3.org/2000/svg" :width="width" :height="height" viewBox="0 0 18 18" :style="styleObject">
-      <slot />
+      <slot></slot>
    </svg>
 </template>
 
@@ -8,6 +8,7 @@
 import { teal } from '@/constants/colors';
 
 export default {
+   name: 'icon-base',
    props: {
       width: {
          type: [Number, String],

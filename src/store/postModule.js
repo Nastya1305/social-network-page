@@ -1,7 +1,7 @@
-import { getPosts } from "@/services/post";
+import { getPosts, createPost } from "@/services/post";
 
 export const postModule = {
-   state: ()=> ({
+   state: () => ({
       posts: [],
       isLoading: false,
    }),
@@ -17,16 +17,24 @@ export const postModule = {
       }
    },
    actions: {
-      async fetchPostsByUserId({state, commit}, userId) {
+      async fetchPostsByUserId({ commit }, userId) {
          try {
             commit('setPosts', undefined);
             commit('setLoading', true);
             commit('setErrorMessage', "");
             commit('setPosts', await getPosts(userId))
-         } catch(e) {
+         } catch (e) {
             commit('setErrorMessage', e);
          } finally {
             commit('setLoading', false);
+         }
+      },
+      async addPost({ state, commit }, {post, userID}) {
+         try {
+            const newPost = await createPost(post, userID);
+            commit('setPosts', [...state.posts, newPost]);
+         } catch (e) {
+            commit('setErrorMessage', e);
          }
       },
    },

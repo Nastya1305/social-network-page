@@ -1,0 +1,11 @@
+@import "@/styles/vars";
+
+.post-form {
+   *:not(:last-child){
+      margin-bottom: 1.2rem;
+   }
+
+   &__save-btn {
+      margin-left: auto;
+   }
+}

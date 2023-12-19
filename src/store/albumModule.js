@@ -17,7 +17,7 @@ export const albumModule = {
       }
    },
    actions: {
-      async fetchAlbumsByUserId({ state, commit }, userId) {
+      async fetchAlbumsByUserId({ commit }, userId) {
          try {
             commit('setAlbums', undefined);
             commit('setLoading', true);

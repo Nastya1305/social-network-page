@@ -1,10 +1,14 @@
 <template>
    <section-container v-if="!errorMessage" title="Albums" :isLoading="isLoading">
-      <div class="album-list">
-         <div class="album-list__item" v-for="album of albums">
-            <photo-album class="album-list__album" :album="album" />
+
+      <template #content>
+         <div class="album-list">
+            <div class="album-list__item" v-for="album of albums">
+               <photo-album class="album-list__album" :album="album" />
+            </div>
          </div>
-      </div>
+      </template>
+      
    </section-container>
 
    <p v-else class="error">{{ 'Unable to load albums: ' + errorMessage }}</p>
@@ -13,12 +17,11 @@
 
 <script>
 import { mapState, mapActions } from 'vuex';
-import SectionContainer from '@/components/UI/SectionContainer'
 import PhotoAlbum from '@/components/PhotoAlbum'
 
 export default {
    name: 'PhotoAlbumList',
-   components: { PhotoAlbum, SectionContainer },
+   components: { PhotoAlbum,},
    computed: {
       ...mapState({
          albums: state => state.album.albums,

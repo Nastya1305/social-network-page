@@ -42,11 +42,11 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style  lang="scss">
 @import "@/styles/vars";
 
 .user-info {
-  *:not(:last-child) {
+  >*:not(:last-child) {
     margin-bottom: 30px;
   }
 }

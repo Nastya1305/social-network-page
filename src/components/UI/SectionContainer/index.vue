@@ -1,10 +1,15 @@
 <template>
    <section class="section">
-      <h2 v-if="title" class="section__title">{{ title }}</h2>
+      <header v-if="title" class="section__header">
+         <slot name="tool-btn"></slot>
+         <h2 class="section__title">{{ title }}</h2>
+      </header>
+
+      <slot v-if="!isLoading" name="content"></slot>
+
       <div class="section__loader">
          <fade-loader :loading="isLoading" :color="tealColor" />
       </div>
-      <slot v-if="!isLoading"></slot>
    </section>
 </template>
 
@@ -14,7 +19,7 @@ import FadeLoader from 'vue-spinner/src/FadeLoader.vue';
 import { teal } from '@/constants/colors';
 
 export default {
-   name: 'SectionContainer',
+   name: 'section-container',
    components: {
       FadeLoader
    },

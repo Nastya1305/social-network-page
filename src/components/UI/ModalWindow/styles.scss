@@ -1,0 +1,48 @@
+@import "@/styles/vars";
+
+.modal {
+  &__mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__container {
+    width: 500px;
+    padding: 22px;
+    margin: 20px;
+    
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  }
+
+  &__title {
+    color: $teal;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  &__close-button {
+    margin-left: auto;
+  }
+}
+

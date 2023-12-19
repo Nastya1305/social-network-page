@@ -11,10 +11,16 @@
       padding: 15px;
    }
 
+   &__header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+   }
+
    &__title {
       color: $teal;
       font-size: 1.6rem;
-      margin-bottom: 1rem;
    }
 
    &__loader {
